@@ -1,0 +1,123 @@
+// menu btn and menu outlay
+.menu__btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeIn();
+  .btn__line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: set-text-color($primaryColor);
+    @include easeIn();
+  }
+  
+  &.close {
+    transform: rotate(180deg);
+
+    .btn__line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }  
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &__branding, &__nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &__branding {
+    background: $primaryColor;
+    @include easeIn();
+    transform: translate3d(0, 100%, 0);
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+    .portrait {
+      max-width: 100%;
+      img {
+        width: 230px;
+        height: 230px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #eece1a;
+      }
+    }
+
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    background: darken($color: $primaryColor, $amount: 5);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeIn();
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .nav-item {
+    // transform: translate3d(0, 0, 0);
+    // @include easeIn();
+
+    // &.show {
+    //   transform: translate3d(0, 0, 0);
+    // }
+
+    &.current > a {
+      color: $almond;
+      @include easeIn();
+    } 
+  }
+  
+  // @for $x from 1 to 4 {
+  //   .nav-item:nth-child(#{$x}) {
+  //     transition-delay: $x * 0.1s;
+  //   }
+  // }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1rem 0;
+    color: $backgroundColor;
+    @include easeIn();
+    &:hover {
+      color: $almond;
+      @include easeIn();
+    }
+  }
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my portfolio</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style/main.css">
+  </head>
+  <body>
+    <header>
+      <!-- onclick="togglesidebar(this) -->
+      <div class="menu__btn">
+        <div class="btn__line"></div>
+        <div class="btn__line"></div>
+        <div class="btn__line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu__branding">
+          <div class="portrait">
+            <img src="img/pp.jpg" alt="profile pic">
+          </div>
+        </div>
+        <ul class="menu__nav">
+          <li class="nav-item ">
+            <a href="index.html" class="nav-link">home</a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link ">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="works.html" class="nav-link">my work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="about-page">
+      <h1 class="lg-heading">About <span style="color: #eece1a;">Me</span></h1>
+      <h3 class="">let me tell you something...</h3>
+
+      <div class="about__content row">
+        
+        <div class="bio col-12 col-md-12 col-lg-5">
+          
+          <img src="img/pp.jpg" alt="profile pic" class="bio__circle">
+        
+          <div class="bio__content">
+            <span class="bio__title"><strong>who is this guy?</strong></span>
+            <p>i have a passion for frontend developing and i am interested to more advancement, learning and experience
+              <br><a href="contact.html"><span style="color: #eece1a;">Let's make something special.</span></a></p>
+          </div>
+        </div>
+
+        <div class="bio__progress container col-12 col-md-12 col-lg-5">
+          <!-- Blue -->
+          <h3 class="progress__label">html</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width:80%">80%</div>
+          </div><br>
+        
+          <!-- Green -->
+          <h3 class="progress__label">css</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+          </div><br>
+        
+          <!-- Turquoise -->
+          <h3 class="progress__label">sass</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width:65%">65%</div>
+          </div><br>
+        
+          <!-- Orange -->
+          <h3 class="progress__label">bootstrap</h3>
+          <div class="progress">
+             <div class="progress-bar" style="width:70%">70%</div>
+          </div><br>
+        
+          <!-- Red -->
+          <h3 class="progress__label">js</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width:30%">30%</div>
+          </div><br>
+        
+        </div>
+      </div>
+    </main>
+    <footer class="main__footer">
+      copyright &copy; 2019
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
